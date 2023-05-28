@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("https://cdnb.artstation.com/p/assets/images/images/029/411/111/large/eduardo-hurtado-05.jpg?1675857434");
+    background-size: cover;
+}
+
+.navbar {
+    position: absolute;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.navbar a {
+    color: white;
+}
+
+.navbar .logo {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.navbar .navlinks ul{
+    display: flex;
+}
+
+.navbar .navlinks ul li{
+    margin: 0 25px;
+}
+
+.navbar .navlinks ul li.active a {
+    margin: 0 25px;
+    color: pink;
+    font-weight: 600;
+}
+
+.navbar .menu-button {
+    display: none;
+    width: 35px;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
+
+
+
+@media screen and (max-width: 900px) {
+    
+    .navbar {
+        padding: 0;
+    }
+
+    .navbar .menu-button {
+        display: block;
+    }
+
+    .navbar .logo {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+    }
+    
+    .navbar .navlinks ul li{
+        margin: 25px 0;
+        font-size: 1.2em;
+    }
+
+    .navlinks {
+        top: 0;
+        left: 0;
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(8px);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -100%;
+        transition: all 0.5s ease;
+    }
+
+    .navlinks.mobile-menu {
+        margin-left: 0;
+    }
+
+    .navlinks ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
