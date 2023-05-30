@@ -30,6 +30,14 @@
     </nav>
 
     <!-- ! Pour le paragraphe sur la home page on va faire un effet de blur derrière pour pouvoir voir le texte ! -->
+
+    <div class="p-container">
+        <div class="p-background">
+            <div class="p-content">
+                <h1>WHAT'S THIS?</h1>
+            </div>
+        </div>
+    </div>
     
 </body>
 
@@ -39,6 +47,7 @@
 
     navbarButton.addEventListener('click', ()=>{
         navlinks.classList.toggle('mobile-menu')
+        document.getElementsByClassName(".p-container").style.display = "none";
     })
 </script>
 </html>

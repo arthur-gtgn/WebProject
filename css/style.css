@@ -57,54 +57,33 @@ body, html {
     right: 50px;
 }
 
+.p-container .p-background {
 
+    position: absolute;
+    width: 95vw;
+    height: 600px;
+    margin-top: 150px;
+    margin-left: 50px;
 
-@media screen and (max-width: 900px) {
-    
-    .navbar {
-        padding: 0;
-    }
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
 
-    .navbar .menu-button {
-        display: block;
-    }
-
-    .navbar .logo {
-        position: absolute;
-        top: 50px;
-        left: 50px;
-    }
-    
-    .navbar .navlinks ul li{
-        margin: 25px 0;
-        font-size: 1.2em;
-    }
-
-    .navlinks {
-        top: 0;
-        left: 0;
-        position: absolute;
-        background-color: rgba(255, 255, 255, 0.349);
-        backdrop-filter: blur(4px);
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: -100%;
-        transition: all 0.5s ease;
-    }
-
-    .navlinks.mobile-menu {
-        margin-left: 0;
-    }
-
-    .navlinks ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
 }
+
+.p-container .p-background .p-content {
+    display: flex;
+    margin: 30px 50px;
+    color: white;
+}
+
+.p-container .p-background .p-content h1 {
+    text-decoration: underline;
+}
+
 
 .container {
     overflow: auto;
@@ -180,3 +159,52 @@ body, html {
     font-weight: 500;
     box-shadow: rgba(0, 0, 0, 0.5);
 }
+
+
+@media screen and (max-width: 900px) {
+    
+    .navbar {
+        padding: 0;
+    }
+
+    .navbar .menu-button {
+        display: block;
+    }
+
+    .navbar .logo {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+    }
+    
+    .navbar .navlinks ul li{
+        margin: 25px 0;
+        font-size: 1.2em;
+    }
+
+    .navlinks {
+        top: 0;
+        left: 0;
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.349);
+        backdrop-filter: blur(4px);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -100%;
+        transition: all 0.5s ease;
+    }
+
+    .navlinks.mobile-menu {
+        margin-left: 0;
+    }
+
+    .navlinks ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
