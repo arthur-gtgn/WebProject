@@ -45,7 +45,7 @@
     align-items: center;
     height: 100%;
     width: 100px;
-    background-color: gray;
+    background-color: rgba(42, 67, 93, 0.1);
 }
 
 h1{
@@ -53,4 +53,28 @@ h1{
     text-align: center;
     font-size:xx-large ;
     text-shadow: 0 0 10px,0 0 20px;
+}
+
+
+#addCard{
+    
+    background: none;
+    border: none;
+    font-size: 50px;
+    color: white;
+    text-shadow: 0 0 20px;
+}
+
+#bank {
+    width: 80vw;
+    height: 300px;
+    background-color: black;
+    
+}
+
+#first{
+    text-align: center;
+}
+#second{
+    text-align: center;
 }
