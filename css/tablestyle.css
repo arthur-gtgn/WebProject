@@ -2,6 +2,9 @@
     font-family: 'Poppins', sans-serif;
     margin: 50px;
     padding: 50px;
+    color: white;
+    font-size:large ;
+    text-shadow: 0 0 10px,0 0 20px;
     
    
    
@@ -42,5 +45,12 @@
     align-items: center;
     height: 100%;
     width: 100px;
-    background-color: white;
+    background-color: gray;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    font-size:xx-large ;
+    text-shadow: 0 0 10px,0 0 20px;
 }

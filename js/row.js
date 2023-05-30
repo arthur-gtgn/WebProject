@@ -4,7 +4,7 @@ const Colors = [
   'cadetblue',
   'steelblue',
   'lightskyblue',
-  'aliceblue'
+  'powderblue'
   ];
 
 const onDragOver = (event) => {
