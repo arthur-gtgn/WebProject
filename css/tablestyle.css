@@ -1,0 +1,74 @@
+#corps{
+    font-family: 'Poppins', sans-serif;
+    margin: 50px;
+    padding: 20px;
+    color: white;
+    font-size:large ;
+    text-shadow: 0 0 10px,0 0 20px;
+    
+   
+   
+   
+
+}
+#board{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    width: 80vw;
+    height: 70vh;
+    background-color:rgba(26, 35, 68, 0.95);
+
+}
+
+.row{
+    display: flex;
+    width: 100%;
+    height: 18%;
+    background-color: rgba(42, 67, 93, 0.5);
+}
+
+.label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height:100% ;
+    background-color: teal;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100px;
+    background-color: rgba(42, 67, 93, 0.1);
+}
+
+h1{
+    color: white;
+    text-align: center;
+    font-size:xx-large ;
+    text-shadow: 0 0 10px,0 0 20px;
+}
+
+
+#addCard{
+    
+    background: none;
+    border: none;
+    font-size: 50px;
+    color: white;
+    text-shadow: 0 0 20px;
+}
+
+#bank {
+    width: 80vw;
+    height: 300px;
+    background-color: black;
+    
+}
+
