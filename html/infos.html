@@ -15,19 +15,22 @@
 <body>
 
     
-
-    <nav class="navbar">
-        <a class="logo" href="/html/home.html">EF'RANKING</a>
-        <div class="navlinks">
-            <ul>
-                <li><a href="/html/home.html">Home</a></li>
-                <li><a href="/html/table.html">Table</a></li>
-                <li><a href="/html/games.html">Games</a></li>
-                <li class="active"><a href="#">Infos</a></li>
-            </ul>
-        </div>
-        <img src="/img/menu-btn.png" alt="menu button" class="menu-button">
-    </nav>
+    <header>
+        <nav class="navbar">
+            <a class="logo" href="/html/home.html">EF'RANKING</a>
+            <div class="navlinks">
+                <ul>
+                    <li><a href="/html/home.html">Home</a></li>
+                    <li><a href="/html/table.html">Table</a></li>
+                    <li><a href="/html/games.html">Games</a></li>
+                    <li><a href="/html/form.html">Add Game</a></li>
+                    <li class="active"><a href="#">Infos</a></li>
+                </ul>
+            </div>
+            <img src="/img/menu-btn.png" alt="menu button" class="menu-button">
+        </nav>
+    </header>
+    
     <div class="container">
         <div class="card">
             <div class="content">
@@ -63,6 +66,7 @@
     
 </body>
 
+<script type="text/javascript" src="vanilla-tilt.js"></script>
 <script>
     VanillaTilt.init(document.querySelectorAll(".card"), {
         max: 25,
@@ -70,7 +74,7 @@
         glare: true,
         "max-glare": 0.3
     });
-    
+
     const navbarButton = document.querySelector(".menu-button")
     const navlinks = document.querySelector(".navlinks")
 
