@@ -7,13 +7,20 @@
     <title>EF'RANKING | Games</title>
     <!-- <script src="/js/script.js"></script> -->
     <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
-
+    <script rel="text/script" src="/js/formscript.js"></script>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
+<style>
+    html {
+        overflow: scroll;
+    }
+</style>
+
+<body>
     <header>
         <nav class="navbar">
             <a class="logo" href="#">EF'RANKING</a>
@@ -22,7 +29,6 @@
                     <li><a href="/html/home.html">Home</a></li>
                     <li><a href="/html/table.html">Table</a></li>
                     <li class="active"><a href="#">Games</a></li>
-                    <li><a href="/html/form.html">Add Game</a></li>
                     <li><a href="/html/infos.html">Infos</a></li>
                 </ul>
             </div>
@@ -30,11 +36,9 @@
         </nav>
     </header>
 
-    
-
-    <div class="container">
-        <div class="card">
-            <div class="content">
+    <div class="container" id="cont">
+        <div class="card" id="cad">
+            <div class="content" id="contt">
                 <img src="/img/minecraft-cube.jpg">
                 <h3>Minecraft</h3>
                 <p>The most played game ever. For many of our generation, it has built up creativity and made dreams possible.
@@ -64,12 +68,40 @@
             </div>
         </div>
     </div> 
-    
+
+    <!--
+    <div class="p-container">
+        <div class="p-background">
+            <div class="p-content">
+                <h1>Add a game to the game list</h1>
+                <form class="p-form">
+                    <ul>
+                        <li>
+                            <input type="text" name="name" placeholder="Name of the game">
+                            <input type="text" name="pages" placeholder="Shop page">
+                            <li>
+                                <input type="description" name="description" placeholder="Brief description of the game">
+                            </li>
+                        
+                            <li>
+                                <input type="file" accept="image/jpeg, image/png, image/jpg" id="addIcon">
+                            </li>
+                            
+                            <li>
+                                <input type="submit" value="SUBMIT" id="submit">
+                            </li>
+                        </li>
+                </form>
+            </div>
+        </div>
+    </div>
+    -->
+
 </body>
 
 <script type="text/javascript" src="vanilla-tilt.js"></script>
 <script>
-
+    
     VanillaTilt.init(document.querySelectorAll(".card"), {
         max: 25,
         speed: 400,
