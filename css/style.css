@@ -28,7 +28,9 @@ body, html {
 
 .navbar a {
     color: white;
-}
+    text-shadow: 0 0 10px;
+};
+
 
 .navbar .logo {
     font-size: 2em;
