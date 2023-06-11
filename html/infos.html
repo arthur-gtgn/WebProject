@@ -28,10 +28,49 @@
         </div>
         <img src="/img/menu-btn.png" alt="menu button" class="menu-button">
     </nav>
+    <div class="container">
+        <div class="card">
+            <div class="content">
+                <img src="/img/minecraft-cube.jpg">
+                <h3>Minecraft</h3>
+                <p>The most played game ever. For many of our generation, it has built up creativity and made dreams possible.
+                    From building a simple wooden house to a super-computer, this game would let you do pretty much anything you want.
+                </p>
+                <a href="#">Wiki Page</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <img src="/img/GTAV-logo.jpg">
+                <h3>GTA V</h3>
+                <p>Released in 2013, it has changed the video-game industry forever. Bringing in game-changing realism, through its sharp
+                    graphics or its ground-breaking physics. Everyone has at least played it once, and know who are Michael, Trevor and Franklin.
+                </p>
+                <a href="#">Steam Page</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <img src="/img/csgo-logo.png">
+                <h3>CS:GO</h3>
+                <p>The most famous five-aside shooter you can find out there. It revolutionized the FPS genre, created a strong e-sport
+                    community, and is still played by thousands of players everyday. Young lads have build careers on this game and made a name.
+                </p>
+                <a href="https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/?l=french">Steam Page</a>
+            </div>
+        </div>
+    </div> 
     
 </body>
 
 <script>
+    VanillaTilt.init(document.querySelectorAll(".card"), {
+        max: 25,
+        speed: 400,
+        glare: true,
+        "max-glare": 0.3
+    });
+    
     const navbarButton = document.querySelector(".menu-button")
     const navlinks = document.querySelector(".navlinks")
 
@@ -39,4 +78,5 @@
         navlinks.classList.toggle('mobile-menu')
     })
 </script>
+
 </html>
